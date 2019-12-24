@@ -1,26 +1,30 @@
 
+<link href="https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap" rel="stylesheet">
 
-<img class="movgallery" src=<%=  @movie.image%> >
-<h1><%= @movie.title %> </h1>
-<h1>Release date:  <%= @movie.year %> </h1> 
 
-<h1>Movie Star:   <%= @movie.star %> </h1> 
-<br>
+<div class="container my_container">
+    <img class="movgallery" src="<%=@movie.image%>"  >
+    <h1>Title: <%= @movie.title %> </h1>
+    <h1>Release date:  <%= @movie.year %> </h1> 
+    <h1>Movie Star:   <%= @movie.star %> </h1> 
+    <br>
+</div>
+
 
 <div>
 
 <% @movie.actors.each do |actor|%>
-
-<table>
+<table class="pleaseme">
   <tbody>
     <tr><td>
-    <img src=<%= actor.img%> height="150", width="150">
+    <img  src=<%= actor.img%> height="150", width="150">
     </td></tr>
     <tr><td>
     <%= actor.name %>
     </td></tr>
-    </table>
   </tbody>
+      </table>
+
 <% end %>
 
 <%= link_to 'Add Actor', actors_new_path(@movie) %> 

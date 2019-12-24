@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project2</title>
+    <title>Movies</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,18 +15,19 @@
   <body>
 
   <body class="<%= controller_name %> <%= action_name %>">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">MOVIES</a>
-      <%= link_to "Add a New Movie", new_movie_path %>
+  <div class="text-light">
+  <nav class="navbar navbar-expand-lg navbar-light container"  >
+      <%= link_to "MOVIES", new_movie_path , :class=> "text-light navbar-brand"%> 
+      <%= link_to "Add a New Movie", new_movie_path , :class=> "text-light" %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-           <li class="nav-item ">
+           <li class="nav-item">
        <%if(user_signed_in?)%> 
        <label>Welcome <%= current_user.email %></label>
        <%= link_to "Sign out", destroy_user_session_path, method: :delete %> 
@@ -39,7 +40,7 @@
 </nav>
 
 
-
+</div>
 <%= yield %>
 </body>
 </html>

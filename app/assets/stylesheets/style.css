@@ -1,4 +1,5 @@
 
-body{
-    background: url("https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+body,nav{
+    background: url("https://images.wallpaperscraft.com/image/sinister_2_shannyn_sossamon_2015_102635_1920x1080.jpg");
+    background-repeat: no-repeat;
 }

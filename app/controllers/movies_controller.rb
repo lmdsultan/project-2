@@ -1,5 +1,4 @@
 class MoviesController < ApplicationController
-  # before_action :set_movie, only: [:show]
 
 
   before_action :authenticate_user! ,only:[:show, :edit, :update, :destroy , :new]
@@ -21,6 +20,7 @@ class MoviesController < ApplicationController
   def edit
     @movie = current_user.movies.find(params[:id])
     @user = current_user
+    
   end
 
   def update

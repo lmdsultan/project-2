@@ -1,0 +1,19 @@
+<h1>Adding Movies</h1>
+
+<%= form_for @movie , url:{action: "create"} do |f| %>
+
+        <%= f.label :image, '- Image ' %><br>
+        <%= f.text_field :image  %><br><br>
+
+        <%= f.label :title,'- Title ' %><br>
+        <%= f.text_field :title %><br><br>
+
+        <%= f.label :year, '- Year  ' %><br>
+        <%= f.text_field :year %><br><br>
+
+        <%= f.label :star, '- Star ' %><br>
+        <%= f.text_field :star %><br><br>
+
+        <%= f.submit " Submit " %>
+
+<% end %>

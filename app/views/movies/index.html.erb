@@ -1,0 +1,29 @@
+
+
+<div class="backgnwemovie"> 
+</div>
+<br><br>
+
+   <div class="moviesh">
+
+    <% @movies.each do |movie| %>
+    <table>
+  <tbody>
+        <tr><td>
+        <img class="movgallery" src=<%= movie.image %> height="200", width="200">
+        </td></tr>
+         
+        <tr><td>
+        <%= movie.title %>
+        </td></tr>
+</div>
+<div class="btn-group" role="group" aria-label="Basic example" >
+</div>
+<tr><td><%= link_to 'Movie Cast', movie , :class => "btn btn-outline-primary thht" %></td></tr>
+<tr><td><%= link_to 'Edit Information', edit_movie_path(movie), :class => "btn btn-outline-primary thht" %></td></tr>
+<tr><td><%= link_to 'Remove Movie', movie, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-outline-primary thht" %></td></tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+

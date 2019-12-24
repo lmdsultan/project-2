@@ -1,0 +1,11 @@
+<h1>Adding Actors</h1>
+<%= form_for @actor , url:{action: "create"} do |f| %>
+
+        <%= f.label :name, '- name ' %><br>
+        <%= f.text_field :name  %><br><br>
+
+        <%=  f.label :img,'- img ' %><br>
+        <%= f.text_field :img %><br><br>
+        
+        <%= f.submit "Save"%>
+        <% end %>

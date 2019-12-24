@@ -1,0 +1,28 @@
+
+
+<img class="movgallery" src=<%=  @movie.image%> >
+<h1><%= @movie.title %> </h1>
+<h1>Release date:  <%= @movie.year %> </h1> 
+
+<h1>Movie Star:   <%= @movie.star %> </h1> 
+<br>
+
+<div>
+
+<% @movie.actors.each do |actor|%>
+
+<table>
+  <tbody>
+    <tr><td>
+    <img src=<%= actor.img%> height="150", width="150">
+    </td></tr>
+    <tr><td>
+    <%= actor.name %>
+    </td></tr>
+    </table>
+  </tbody>
+<% end %>
+
+<%= link_to 'Add Actor', actors_new_path(@movie) %> 
+<%= link_to 'Back', movies_path %>
+</div>

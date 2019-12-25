@@ -14,12 +14,12 @@ class MoviesController < ApplicationController
 
   def show
       @movie = Movie.find(params[:id])
-      @user = current_user
   end
 
   def edit
     @movie = current_user.movies.find(params[:id])
     @user = current_user
+
     
   end
 

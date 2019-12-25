@@ -1,5 +1,5 @@
+<div class= "container text-light">
 <h1>Edit</h1>
-
 <%= form_for @movie, url:{action: "update"} do |f| %>
 
         <%= f.label :image, 'Image : ' %><br>
@@ -14,10 +14,11 @@
         <%= f.label :star, 'Star :' %><br>
         <%= f.text_field :star  %><br><br>
 
-        <%= f.submit " Save " %>
+        <%= f.submit " Save " , :class => "btn btn-secondary btn-lg thht" %>
 
 <% end %>
+</div>
 
+<%= link_to 'Show', @movie , :class => "btn btn-secondary btn-lg thht" %> |
+<%= link_to 'Back', movies_path , :class => "btn btn-secondary btn-lg thht"%>
 
-<%= link_to 'Show', @movie %> |
-<%= link_to 'Back', movies_path %>

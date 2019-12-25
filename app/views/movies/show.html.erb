@@ -11,10 +11,9 @@
 </div>
 
 
-<div>
-
+<div style="width:100%">
 <% @movie.actors.each do |actor|%>
-<table class="pleaseme">
+<table class="pleaseme">  
   <tbody>
     <tr><td>
     <img  src=<%= actor.img%> height="150", width="150">
@@ -22,11 +21,12 @@
     <tr><td>
     <%= actor.name %>
     </td></tr>
-  </tbody>
-      </table>
-
+    </tbody></table>
 <% end %>
-
-<%= link_to 'Add Actor', actors_new_path(@movie) %> 
-<%= link_to 'Back', movies_path %>
 </div>
+      <% if current_user.id == @movie.user_id %>
+      <%= link_to 'Add Actor', actors_new_path(@movie), :class => "btn btn-secondary btn-lg thht" %> 
+      <% else%>
+         <!-- <%= link_to 'Movie Cast', @movie , :class => "btn btn-secondary btn-lg thht" %> -->
+      <% end %>
+

@@ -1,5 +1,5 @@
-<div class="addnewactor">
-<h1>Adding Actors</h1>
+<div class= "container text-light">
+<h1>Add Actor</h1>
 <%= form_for @actor , url:{action: "create"} do |f| %>
 
         <%= f.label :name, '- name ' %><br>
@@ -8,6 +8,6 @@
         <%=  f.label :img,'- img ' %><br>
         <%= f.text_field :img %><br><br>
         
-        <%= f.submit "Save"%>
+        <%= f.submit "Save" , :class => "btn btn-secondary btn-lg thht" %>
         <% end %>
 </div>

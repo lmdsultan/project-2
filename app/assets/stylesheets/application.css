@@ -14,11 +14,19 @@
  *= require_self
  */
 
- div,.pleaseme{
+ div{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.pleaseme{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-grow: 1;
 }
 
  .movgallery{
@@ -29,10 +37,11 @@
 
     }
     img{
-        border: 1.5px solid #ddd;
+        border-style: 1.5px solid #ddd;
         border-radius: 90px;
         padding: 5px;
         width: 150px; 
+        vertical-align: middle;
     }
     td{
         color: white;
@@ -52,7 +61,7 @@ h1,a{
     text-align: center;
     justify-content: center;
     color: white;
-    padding-top: 300px;
+    padding-top: 150px;
 }
 .thht{
     width: 50%;
@@ -64,8 +73,9 @@ table{
     padding-top: 20px;
 }
 .movies .btn, .btn-outline-secondary{
-    background-image:url("https://images.wallpaperscraft.com/image/sinister_2_shannyn_sossamon_2015_102635_1920x1080.jpg")
-
+    background-image:url("https://images.wallpaperscraft.com/image/sinister_2_shannyn_sossamon_2015_102635_1920x1080.jpg");
+    background: no-repeat;
+    height: 48px;
 }
 a{
     color: white;

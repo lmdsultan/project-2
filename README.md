@@ -11,3 +11,7 @@ A web application where user can check movie actors.
 
 
 ![Rela db](/Users/mohammedsultan/Desktop/sei/projects/project-2/app/assets/images/rela.jpeg)
+
+# ERD 
+<img src=“/Users/mohammedsultan/Desktop/sei/projects/project-2/app/assets/images/rela.jpeg” alt=“bored”
+    title=“game bored” width=“400" height=“400” />

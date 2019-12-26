@@ -1,6 +1,7 @@
    <div class="moviesh">
     <% @movies.each do |movie| %>
     <table>
+
     <tbody>
         <tr><td>
         <img class="movgallery" src=<%= movie.image %> height="200", width="200">
@@ -9,8 +10,7 @@
         <%= movie.title %>
         </td></tr>
         </div>
-        <div class="btn-group" role="group" aria-label="Basic example" >
-        </div>
+       
  
       <% if current_user.id == movie.user_id %>
       <tr><td><%= link_to 'Movie Cast', movie , :class => "btn btn-secondary btn-lg thht" %></td></tr>

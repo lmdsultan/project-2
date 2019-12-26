@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A web application where user can check movie actors. 
+-	User shall sing-up and sign-in
+-	User who create shall create new movie, read, edit, and delete.
+-	User shall Show others movie and actor only
 
-Things you may want to cover:
+![Sign up/in](/Users/mohammedsultan/Desktop/sei/projects/project-2/app/assets/images/sinp.jpeg)
 
-* Ruby version
+![Add/Edit](/Users/mohammedsultan/Desktop/sei/projects/project-2/app/assets/images/add.jpeg)
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Rela db](/Users/mohammedsultan/Desktop/sei/projects/project-2/app/assets/images/rela.jpeg)

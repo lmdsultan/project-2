@@ -18,7 +18,7 @@
   <div class="text-light">
   <nav class="navbar navbar-expand-lg navbar-light container"  >
       <%= link_to "MOVIES", movies_path , :class=> "text-light navbar-brand"%> 
-      <%= link_to "Add a New Movie", new_movie_path , :class=> "text-light" %>
+      
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -26,8 +26,9 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <%if(user_signed_in?)%> 
+    <%= link_to "Add a New Movie", new_movie_path , :class=> "text-light" %>
 
-    <label class = "mx-auto order-0"> Welcome <%= current_user.username   %></label>
+    <label class = "navbar-item mx-auto order-0"> Welcome <%= current_user.username   %></label>
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">

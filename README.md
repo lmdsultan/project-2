@@ -1,9 +1,6 @@
 # README
 
-A web application where user can check movie actors. 
--	User shall sing-up and sign-in
--	User who create shall create new movie, read, edit, and delete.
--	User shall Show others movie and actor only
-
+In this project I am creating A web application where user can sign up/in. Users shall create new, show, edit, and delete their belong movies and actors. Other users shall show the movie information only. 
 
 ![Rela db](app/assets/images/All.jpeg)
+![ERD](/app/assests/images/ERD.png)

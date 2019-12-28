@@ -4,4 +4,4 @@ In this project I am creating A web application where user can sign up/in. Users
 
 # Entity-relationship diagram
 ![ERD](/app/assets/images/ERD.png)
-![FRAM](//app/assets/images/FRAM.png)
+![FRAM](/app/assets/images/FRAM.png)
